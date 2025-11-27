@@ -1,97 +1,120 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# React Native WalletConnect Example
 
-# Getting Started
+A simple React Native application demonstrating wallet connection and disconnection functionality using Reown.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+## Features
 
-## Step 1: Start Metro
+- 🔗 Connect to Web3 wallets
+- 🔌 Disconnect wallet functionality
+- 📱 Built with React Native
+- 🎨 Clean and simple UI
+- ⚡ Powered by Reown AppKit
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+## Prerequisites
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+Before you begin, ensure you have:
 
-```sh
-# Using npm
-npm start
+- Node.js installed (v16 or higher recommended)
+- React Native development environment set up
+- A Reown Project ID
 
-# OR using Yarn
-yarn start
+## Getting Your Project ID
+
+1. Visit [Reown Dashboard](https://dashboard.reown.com/)
+2. Create a new project or select an existing one
+3. Copy your Project ID
+4. Paste it in the `AppKitConfig` file in this project
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone <your-repo-url>
+cd <your-repo-name>
 ```
 
-## Step 2: Build and run your app
-
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
-
-### Android
-
-```sh
-# Using npm
-npm run android
-
-# OR using Yarn
-yarn android
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
 ```
 
-### iOS
+3. Configure your Project ID:
+   - Open the `AppKitConfig` file
+   - Replace the placeholder with your Project ID from Reown Dashboard
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+4. Run the application:
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
+For iOS:
+```bash
+npx react-native run-ios
+# or
 npm run ios
-
-# OR using Yarn
-yarn ios
 ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+For Android:
+```bash
+npx react-native run-android
+# or
+npm run android
+```
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+## Usage
 
-## Step 3: Modify your app
+1. Open the app on your device/emulator
+2. Tap the "Connect Wallet" button
+3. Select your preferred wallet from the list
+4. Approve the connection in your wallet app
+5. Use the "Disconnect" button to end the session
 
-Now that you have successfully run the app, let's make changes!
+## Project Structure
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+```
+.
+├── src/
+│   ├── components/
+│   ├── config/
+│   │   └── AppKitConfig.ts
+│   └── ...
+├── App.js
+├── package.json
+└── README.md
+```
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+## Built With
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+- [React Native](https://reactnative.dev/) - Mobile application framework
+- [Reown AppKit](https://reown.com/) - Wallet connection library
 
-## Congratulations! :tada:
+## Documentation
 
-You've successfully run and modified your React Native App. :partying_face:
+For detailed setup instructions and advanced configuration, please refer to the official Reown AppKit documentation:
 
-### Now what?
+📚 [Reown AppKit React Native Documentation](https://docs.reown.com/appkit/react-native/core/installation)
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+## Troubleshooting
 
-# Troubleshooting
+If you encounter issues:
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+1. Ensure your Project ID is correctly configured
+2. Check that all dependencies are properly installed
+3. Verify your React Native environment is set up correctly
+4. Consult the [Reown documentation](https://docs.reown.com/appkit/react-native/core/installation) for platform-specific issues
 
-# Learn More
+## Contributing
 
-To learn more about React Native, take a look at the following resources:
+Feel free to submit issues and enhancement requests!
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## Acknowledgments
+
+- Thanks to the Reown team for the AppKit SDK
+- React Native community for excellent documentation
+
+---
+
+**Need help?** Check out the [Reown Documentation](https://docs.reown.com/) or open an issue in this repository.
