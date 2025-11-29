@@ -29,7 +29,7 @@ Before you begin, ensure you have:
 
 1. Clone the repository:
 ```bash
-git clone [<your-repo-url>](https://github.com/dev78ashish/react-native-reown-appkit-example.git)
+git clone https://github.com/dev78ashish/react-native-reown-appkit-example.git
 cd react-native-reown-appkit-example
 ```
 
