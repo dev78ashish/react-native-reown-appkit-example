@@ -29,8 +29,8 @@ Before you begin, ensure you have:
 
 1. Clone the repository:
 ```bash
-git clone <your-repo-url>
-cd <your-repo-name>
+git clone [<your-repo-url>](https://github.com/dev78ashish/react-native-reown-appkit-example.git)
+cd react-native-reown-appkit-example
 ```
 
 2. Install dependencies:
@@ -105,10 +105,6 @@ If you encounter issues:
 ## Contributing
 
 Feel free to submit issues and enhancement requests!
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ## Acknowledgments
 
